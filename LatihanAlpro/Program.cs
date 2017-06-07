@@ -15,7 +15,7 @@ namespace LatihanAlpro
             //triplet();
             //triplet2();
             //no5();
-            
+            /*
             int[] arr = { 1, 2, 3, 4, 5, 6 };
             int n = arr.Length;
             no6(arr,n);
@@ -31,6 +31,22 @@ namespace LatihanAlpro
             int[] arr4 = { 1, 3, 6, 10, 11, 15 };
             int n4 = arr4.Length;
             no6(arr4, n4);
+            */
+            int n = 5;
+            Console.WriteLine("Factorial " + n + " is: " + factorial(n));
+
+        }
+
+        public static int factorial(int n)
+        {
+            if (n == 1)
+            {
+                return n;
+            }
+            else
+            {
+                return n * factorial(n - 1);
+            }
         }
 
         static void no1()
@@ -120,6 +136,7 @@ namespace LatihanAlpro
 
             Console.WriteLine(status);
         }
+
         static void triplet2()
         {
             int[] arr = { 1,2,4,5,3 };
